@@ -1,8 +1,15 @@
 {
   "permissions": {
     "allow": [
-      "Bash(task-master:*)"
+      "Bash(task-master:*)",
+      "Bash(tm list:*)",
+      "mcp__task-master-ai__expand_task",
+      "mcp__task-master-ai__models"
     ],
     "deny": []
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "task-master-ai"
+  ]
 }

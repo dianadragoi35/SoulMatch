@@ -10,7 +10,38 @@
         "priority": "high",
         "details": "The project already has TypeScript, Expo Router, Linear Gradient, Vector Icons, and basic structure. Need to install additional dependencies for dating app functionality: Formik + Yup for form validation, Axios for HTTP client, Zustand for state management, date-fns for date handling, Expo Notifications for push notifications. Set up dating app specific folder structure with screens for matching, profiles, chat, settings. Create components directories for profile cards, chat bubbles, match interface. Add services for API calls, authentication, matching algorithm. Configure utils for date formatting, validation helpers, and image processing. Set up types for user profiles, matches, messages, and app state.",
         "testStrategy": "Verify all new dependencies install correctly and integrate with existing setup. Test that TypeScript compilation works with new packages. Ensure project builds successfully on both iOS and Android simulators with new folder structure. Test that existing functionality (navigation, styling) still works after adding new dependencies.",
-        "subtasks": []
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Setup Code Quality Tools Configuration",
+            "description": "Configure ESLint, Prettier, and TypeScript strict mode with appropriate rules for React Native development",
+            "details": "Install ESLint, Prettier, and related plugins. Create .eslintrc.js with React Native and TypeScript rules. Setup .prettierrc with consistent formatting rules. Enable TypeScript strict mode in tsconfig.json. Configure VS Code settings for auto-formatting.",
+            "status": "pending",
+            "testStrategy": "Run ESLint and Prettier on existing files to ensure rules are working correctly"
+          },
+          {
+            "id": 2,
+            "title": "Setup Pre-commit Hooks and Git Configuration",
+            "description": "Install and configure Husky with lint-staged for automated code quality checks before commits",
+            "dependencies": [
+              1
+            ],
+            "details": "Install husky and lint-staged. Configure pre-commit hooks to run ESLint, Prettier, and TypeScript checks. Setup commit message linting if needed. Test hooks by making a test commit.",
+            "status": "pending",
+            "testStrategy": "Make test commits with intentionally poorly formatted code to verify hooks are preventing bad commits"
+          },
+          {
+            "id": 3,
+            "title": "Setup Testing Infrastructure",
+            "description": "Configure Jest, React Native Testing Library, and testing utilities for comprehensive app testing",
+            "dependencies": [
+              2
+            ],
+            "details": "Install @testing-library/react-native, @testing-library/jest-native, jest. Configure jest.config.js for React Native. Setup test utilities and mocks for Expo modules. Create __tests__ folders and example test files.",
+            "status": "pending",
+            "testStrategy": "Run npm test to ensure testing environment is properly configured and example tests pass"
+          }
+        ]
       },
       {
         "id": 2,

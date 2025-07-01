@@ -63,3 +63,4 @@ dev-debug.log
 # tasks/
 
 claude_desktop_config.json
+.mcp.json
