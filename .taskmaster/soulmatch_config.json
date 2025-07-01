@@ -1,0 +1,45 @@
+{
+  "project": "SoulMatch Dating App",
+  "defaultLabels": ["soulmatch", "react-native", "dating-app"],
+  "taskTemplates": {
+    "personality_feature": {
+      "title": "[PERSONALITY] {feature_name}",
+      "description": "Enhance personality-based matching: {description}",
+      "priority": "high",
+      "labels": ["personality", "core-feature"],
+      "subtasks": [
+        "Design personality assessment questions",
+        "Implement scoring algorithm",
+        "Update UI components",
+        "Add analytics tracking",
+        "Write unit tests"
+      ]
+    },
+    "chat_feature": {
+      "title": "[CHAT] {feature_name}",
+      "description": "Improve chat experience: {description}",
+      "priority": "medium",
+      "labels": ["chat", "messaging", "ux"],
+      "subtasks": [
+        "Design chat interface",
+        "Implement real-time messaging",
+        "Add conversation starters",
+        "Test on mobile devices",
+        "Add accessibility features"
+      ]
+    },
+    "mobile_optimization": {
+      "title": "[MOBILE] {feature_name}",
+      "description": "Mobile optimization: {description}",
+      "priority": "medium",
+      "labels": ["mobile", "performance", "react-native"],
+      "subtasks": [
+        "Analyze current performance",
+        "Optimize components",
+        "Test on iOS/Android",
+        "Update animations",
+        "Validate accessibility"
+      ]
+    }
+  }
+}
