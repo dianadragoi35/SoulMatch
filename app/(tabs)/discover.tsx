@@ -5,5 +5,5 @@ import DiscoverScreen from '../discover';
 // This is just a wrapper that uses the same discover screen component
 // for the tab navigation
 export default function TabDiscoverScreen() {
-    return <DiscoverScreen />;
+  return <DiscoverScreen />;
 }

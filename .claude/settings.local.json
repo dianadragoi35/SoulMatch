@@ -9,7 +9,5 @@
     "deny": []
   },
   "enableAllProjectMcpServers": true,
-  "enabledMcpjsonServers": [
-    "task-master-ai"
-  ]
+  "enabledMcpjsonServers": ["task-master-ai"]
 }

@@ -1,9 +1,11 @@
 # SoulMatch - Personality-First Dating App
 
 ## Project Overview
+
 SoulMatch is a React Native dating app built with Expo Router that prioritizes personality matching over physical appearance. Users complete personality assessments and connect through meaningful conversations.
 
 ## Tech Stack
+
 - React Native with Expo SDK 53
 - Expo Router for navigation
 - TypeScript for type safety
@@ -12,6 +14,7 @@ SoulMatch is a React Native dating app built with Expo Router that prioritizes p
 - Expo Linear Gradient
 
 ## Key Features
+
 - Authentication system with gender preferences
 - Personality assessment (5 questions)
 - Smart matching based on user preferences
@@ -20,6 +23,7 @@ SoulMatch is a React Native dating app built with Expo Router that prioritizes p
 - "Personality-only mode" (photos hidden initially)
 
 ## Current File Structure
+
 ```
 app/
 ├── index.tsx                 # Welcome/Auth check
@@ -40,12 +44,14 @@ styles/
 ```
 
 ## Data Models
+
 - User: email, name, age, gender, interestedIn, personalityType
 - Match: id, name, age, gender, compatibility, personalityType, interests, bio
 - Message: id, sender, text, timestamp
 - Conversation: matchId, matchName, messages[]
 
 ## Development Guidelines
+
 - Use TypeScript for all new code
 - Follow React Native best practices
 - Maintain consistent styling with existing design system

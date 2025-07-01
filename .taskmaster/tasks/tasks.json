@@ -23,9 +23,7 @@
             "id": 2,
             "title": "Setup Pre-commit Hooks and Git Configuration",
             "description": "Install and configure Husky with lint-staged for automated code quality checks before commits",
-            "dependencies": [
-              1
-            ],
+            "dependencies": [1],
             "details": "Install husky and lint-staged. Configure pre-commit hooks to run ESLint, Prettier, and TypeScript checks. Setup commit message linting if needed. Test hooks by making a test commit.",
             "status": "pending",
             "testStrategy": "Make test commits with intentionally poorly formatted code to verify hooks are preventing bad commits"
@@ -34,9 +32,7 @@
             "id": 3,
             "title": "Setup Testing Infrastructure",
             "description": "Configure Jest, React Native Testing Library, and testing utilities for comprehensive app testing",
-            "dependencies": [
-              2
-            ],
+            "dependencies": [2],
             "details": "Install @testing-library/react-native, @testing-library/jest-native, jest. Configure jest.config.js for React Native. Setup test utilities and mocks for Expo modules. Create __tests__ folders and example test files.",
             "status": "pending",
             "testStrategy": "Run npm test to ensure testing environment is properly configured and example tests pass"
@@ -50,9 +46,7 @@
         "details": "Create authentication screens (Login, Register, ForgotPassword) using Formik for form handling and Yup for validation. Implement user registration with email/password, input validation (email format, password strength), and error handling. Add login functionality with session persistence using AsyncStorage. Create password reset flow with email verification simulation. Build authentication context with Zustand for global state management. Add auto-login on app launch if valid session exists. Implement logout functionality with session cleanup.",
         "testStrategy": "Test registration with valid/invalid inputs. Verify login persistence across app restarts. Test password reset flow. Validate form validation errors display correctly. Test authentication state management across different screens.",
         "priority": "high",
-        "dependencies": [
-          1
-        ],
+        "dependencies": [1],
         "status": "pending",
         "subtasks": []
       },
@@ -63,9 +57,7 @@
         "details": "Define TypeScript interfaces for User, Profile, PersonalityAssessment, and Preferences. Create data service layer with AsyncStorage for local persistence. Implement CRUD operations for user profiles with data validation and sanitization. Add data migration utilities for future app updates. Create profile fields: basic info (name, age, location), personality data, preferences, photos array, privacy settings. Implement data encryption for sensitive information. Add backup and restore functionality for user data.",
         "testStrategy": "Test data persistence across app sessions. Verify data validation prevents corrupted data storage. Test migration scenarios with different data versions. Validate all CRUD operations work correctly with proper error handling.",
         "priority": "high",
-        "dependencies": [
-          2
-        ],
+        "dependencies": [2],
         "status": "pending",
         "subtasks": []
       },
@@ -76,9 +68,7 @@
         "details": "Design personality questionnaire with 50+ questions covering Big Five traits, communication styles, values, and relationship preferences. Create question types: multiple choice, Likert scale, and ranking. Implement assessment screen with progress tracking, navigation (back/forward), and save/resume functionality. Develop scoring algorithm based on established personality psychology principles. Create personality type classification system with detailed descriptions. Add results calculation and storage. Implement assessment validation to ensure completion quality.",
         "testStrategy": "Test questionnaire flow with progress saving/resuming. Verify scoring algorithm produces consistent results. Test edge cases like incomplete assessments. Validate personality type classifications are accurate and meaningful.",
         "priority": "high",
-        "dependencies": [
-          3
-        ],
+        "dependencies": [3],
         "status": "pending",
         "subtasks": []
       },
@@ -89,9 +79,7 @@
         "details": "Create compatibility scoring algorithm using personality assessment results. Implement weighted scoring for different personality traits and preferences. Add preference filtering system (age range, distance, dealbreakers). Create matching service that ranks potential matches by compatibility score. Implement mutual matching logic and match notification system. Add compatibility percentage calculation and display. Create match queue management with refresh capabilities. Add basic recommendation engine for discovering new matches.",
         "testStrategy": "Test compatibility scoring with various personality combinations. Verify filtering works correctly with different preference settings. Test match queue updates and ranking accuracy. Validate compatibility percentages are meaningful and consistent.",
         "priority": "high",
-        "dependencies": [
-          4
-        ],
+        "dependencies": [4],
         "status": "pending",
         "subtasks": []
       },
@@ -102,9 +90,7 @@
         "details": "Build card-based discovery interface using React Native gesture handling. Implement swipe gestures for like/pass actions with smooth animations. Create personality-first card display showing compatibility score, personality insights, and basic info before photo reveal. Add match celebration animations and notifications. Implement filtered discovery based on user preferences. Create 'reveal photo' functionality after personality compatibility is established. Add undo last action functionality and match queue management.",
         "testStrategy": "Test swipe gestures on different devices and screen sizes. Verify animations are smooth and responsive. Test personality-first reveal logic. Validate match notifications and celebrations work correctly.",
         "priority": "medium",
-        "dependencies": [
-          5
-        ],
+        "dependencies": [5],
         "status": "pending",
         "subtasks": []
       },
@@ -115,9 +101,7 @@
         "details": "Create chat screen with message list and input components. Implement message data structure with timestamps, status, and content. Add message delivery simulation with status indicators (sent/delivered/read). Create conversation management with match-based chat rooms. Implement emoji picker and basic text formatting. Add typing indicators and read receipts. Create conversation list screen showing recent chats. Add message persistence and conversation history. Implement icebreaker suggestions based on personality compatibility.",
         "testStrategy": "Test message sending and receiving flow. Verify message status updates work correctly. Test conversation persistence and history. Validate emoji and formatting features. Test icebreaker suggestions relevance.",
         "priority": "medium",
-        "dependencies": [
-          6
-        ],
+        "dependencies": [6],
         "status": "pending",
         "subtasks": []
       },
@@ -128,9 +112,7 @@
         "details": "Create profile editing screens for personal information, personality insights, and preferences. Implement photo upload using Expo ImagePicker with multiple photo support and quality optimization. Add photo ordering and deletion functionality. Create privacy settings for profile visibility and information sharing. Implement profile preview showing how others see the user's profile. Add account management features including deactivation and deletion. Create profile completion prompts and progress indicators.",
         "testStrategy": "Test photo upload and management across different devices. Verify privacy settings affect profile visibility correctly. Test profile editing with validation and error handling. Validate profile preview accuracy.",
         "priority": "medium",
-        "dependencies": [
-          3
-        ],
+        "dependencies": [3],
         "status": "pending",
         "subtasks": []
       },
@@ -141,9 +123,7 @@
         "details": "Create user reporting system with predefined categories (harassment, fake profile, inappropriate content). Implement block and unmatch functionality with confirmation dialogs. Add safety guidelines and tips screen accessible from main menu. Create content moderation framework for user-generated content. Implement account verification system with photo and email verification. Add safety center with resources and reporting tools. Create abuse detection algorithms for messages and profiles.",
         "testStrategy": "Test reporting workflow with different scenarios. Verify block/unmatch functionality removes user interactions. Test safety guidelines accessibility. Validate content moderation catches inappropriate content.",
         "priority": "medium",
-        "dependencies": [
-          7
-        ],
+        "dependencies": [7],
         "status": "pending",
         "subtasks": []
       },
@@ -154,10 +134,7 @@
         "details": "Integrate analytics tracking for user engagement, conversion funnels, and feature usage. Add crash reporting with Sentry or similar service. Implement comprehensive unit tests for core business logic, integration tests for user flows, and E2E tests for critical paths. Add performance monitoring and optimization. Create app store assets including screenshots, descriptions, and marketing materials. Implement onboarding tutorial for new users. Add privacy policy and terms of service. Configure app for production deployment with proper signing and optimization.",
         "testStrategy": "Verify analytics data collection is accurate and privacy-compliant. Test crash reporting captures and reports errors correctly. Run full test suite with high coverage. Test app performance under various conditions. Validate app store submission requirements are met.",
         "priority": "medium",
-        "dependencies": [
-          8,
-          9
-        ],
+        "dependencies": [8, 9],
         "status": "pending",
         "subtasks": []
       }
